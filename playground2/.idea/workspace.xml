@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6f8dfea0-017d-4cf3-87a0-878778929af7" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="359RofMFGYDCVRqpDaK6eNT8fbg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AI_robot.executor": "Run",
+    "Application.Abu.executor": "Run",
+    "Application.Abu1.executor": "Run",
+    "Application.Abu2.executor": "Run",
+    "Application.Abu3.executor": "Run",
+    "Application.Abu4.executor": "Run",
+    "Application.Abu5.executor": "Run",
+    "Application.Abu6.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.Me.Me.executor": "Run",
+    "Application.Me.Me07.executor": "Run",
+    "Application.Me.executor": "Run",
+    "Application.Me000.executor": "Run",
+    "Application.Me001.executor": "Run",
+    "Application.Me002.executor": "Run",
+    "Application.Me004.executor": "Run",
+    "Application.Me02.executor": "Run",
+    "Application.Me03.executor": "Run",
+    "Application.Me04.executor": "Run",
+    "Application.Me05.executor": "Run",
+    "Application.Me06.executor": "Run",
+    "Application.Me07.executor": "Run",
+    "Application.Me08.executor": "Run",
+    "Application.Me10.executor": "Run",
+    "Application.Me100.executor": "Run",
+    "Application.Me101.executor": "Run",
+    "Application.Me102.executor": "Run",
+    "Application.Me103.executor": "Run",
+    "Application.Me104.executor": "Run",
+    "Application.Me105.executor": "Run",
+    "Application.Me106.executor": "Run",
+    "Application.Me107.executor": "Run",
+    "Application.Me108.executor": "Run",
+    "Application.Me11.executor": "Run",
+    "Application.Me200.executor": "Run",
+    "Application.Me201.executor": "Run",
+    "Application.Me202.executor": "Run",
+    "Application.Me203.executor": "Run",
+    "Application.Me204.executor": "Run",
+    "Application.Me205.executor": "Run",
+    "Application.Me206.executor": "Run",
+    "Application.Me207.executor": "Run",
+    "Application.Me208.executor": "Run",
+    "Application.Me209.executor": "Run",
+    "Application.Me300.executor": "Run",
+    "Application.Me301.executor": "Run",
+    "Application.Me302.executor": "Run",
+    "Application.Me303.executor": "Run",
+    "Application.Me304.executor": "Run",
+    "Application.Me305.executor": "Run",
+    "Application.Nguyen_Than.executor": "Run",
+    "Application.Practice001.executor": "Run",
+    "Application.Practice002.executor": "Run",
+    "Application.Practice101.executor": "Run",
+    "Application.Practice103.executor": "Run",
+    "Application.Practice104.executor": "Run",
+    "Application.Practice105.executor": "Run",
+    "Application.Practice106.executor": "Run",
+    "Application.Practice107.executor": "Run",
+    "Application.Practice108.executor": "Run",
+    "Application.Practice109.executor": "Run",
+    "Application.Practice110.executor": "Run",
+    "Application.Practice200.executor": "Run",
+    "Application.Practice201.executor": "Run",
+    "Application.Practice202.executor": "Run",
+    "Application.Practice203.executor": "Run",
+    "Application.Practice204.executor": "Run",
+    "Application.Practice205.executor": "Run",
+    "Application.Practice206.executor": "Run",
+    "Application.Practice301.executor": "Run",
+    "Application.Practice302.executor": "Run",
+    "Application.Practise001.executor": "Run",
+    "Application.Training.book02.executor": "Run",
+    "Application.book.executor": "Run",
+    "Application.book02.executor": "Run",
+    "Application.me.executor": "Run",
+    "Application.practise.executor": "Run",
+    "Application.whatever.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/jingx/IdeaProjects/playground2/src/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Me303">
+    <configuration name="Abu3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Abu3" />
+      <module name="playground2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Abu4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Abu4" />
+      <module name="playground2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Me303" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Me.Me303" />
+      <module name="playground2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Me.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Me304" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Me.Me304" />
+      <module name="playground2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Me.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Me305" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Me.Me305" />
+      <module name="playground2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Me.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Me303" />
+        <item itemvalue="Application.Me305" />
+        <item itemvalue="Application.Me304" />
+        <item itemvalue="Application.Abu3" />
+        <item itemvalue="Application.Abu4" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6f8dfea0-017d-4cf3-87a0-878778929af7" name="Changes" comment="" />
+      <created>1762520476358</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1762520476358</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+    <book id="01">
+        <name>Summer in closed eyes <![CDATA[Summer in closed eyes]]></name>
+        <price>20</price>
+        <author>Takafumi</author>
+    </book>
+
+    <book id="03">
+        <name>fall of traver</name>
+        <price>25</price>
+        <author>Mr.Ito</author>
+    </book>
+
+    <book id="04">
+        <name>Spring after you</name>
+        <price>35</price>
+        <author>Bunny</author>
+    </book>
+</books>
