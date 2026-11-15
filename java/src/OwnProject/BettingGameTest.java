@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class BettingGameTest extends ReadFile{
     //analysis data to player
-    //set fake input data
+    //set fake scanner data
     public void loadTestFile() {
         loadFile("C:\\Users\\jingx\\work\\test.txt");
         //Read #Player in file

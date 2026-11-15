@@ -70,7 +70,7 @@ class Me1102 {
 }
 class Me1103 {
     public static void main(String[] args) {
-        Random rand = new Random();                               ////随机数，和Scanner input = new Scanner()同等道理
+        Random rand = new Random();                               ////随机数，和Scanner scanner = new Scanner()同等道理
         int num = rand.nextInt(10);                        ////next(),放上参数，范围内随机
         System.out.println(num);                                  ////输出num
     }

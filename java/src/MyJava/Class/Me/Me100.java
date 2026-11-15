@@ -130,6 +130,6 @@ class Me107 {
         Scanner input = new Scanner(System.in);      //Scanner 接受用户输入内容
         int num = input.nextInt();                   //可接收操作台，接收数字
         System.out.println("Your enter contact is " + num);
-        //char num = input.next().charAt(0);接收单字符，//String num = input.next().;接收字符串
+        //char num = scanner.next().charAt(0);接收单字符，//String num = scanner.next().;接收字符串
     }
 }

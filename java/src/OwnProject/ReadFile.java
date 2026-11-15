@@ -14,9 +14,9 @@ public class ReadFile extends BugTest {
         PipedOutputStream pos = new PipedOutputStream(pis);
         PrintWriter printWriter = new PrintWriter(pos, true);
         new Thread(() -> {
-            //system input
+            //system scanner
             for (String line : inputList) {
-                System.out.println("System input : [" + line + "]");
+                System.out.println("System scanner : [" + line + "]");
                 printWriter.println(line);
                 try {
                     Thread.sleep (500);
@@ -24,14 +24,14 @@ public class ReadFile extends BugTest {
                     e.printStackTrace();
                 }
             }
-            //manual input after system input finished
-            System.out.println("[Test input exhausted, switching to manual input...]");
+            //manual scanner after system scanner finished
+            System.out.println("[Test scanner exhausted, switching to manual scanner...]");
             Scanner manual = new Scanner(System.in);
             //set !false to true for always true, until the last mian set to true, and !true to false and out
             while (!doneChecker.isDone() && manual.hasNextLine()) {
                 printWriter.println(manual.nextLine());
             }
-            System.out.println("[Test input finished, closing...]");
+            System.out.println("[Test scanner finished, closing...]");
             printWriter.close();
         }).start();
         return new Scanner(pis);
@@ -39,7 +39,7 @@ public class ReadFile extends BugTest {
     public interface DoneChecker {
         boolean isDone();
     }
-    //System random input
+    //System random scanner
     public Scanner systemFuzzInput(int inputCount) throws IOException {
         PipedInputStream pis = new PipedInputStream();
         PipedOutputStream pos = new PipedOutputStream(pis);
@@ -47,7 +47,7 @@ public class ReadFile extends BugTest {
         new Thread (() -> {
             for (int i = 0; i < inputCount; i++) {
                 String fuzz = getFuzzInput();
-                System.out.println("Fuzz input " + i + ": [" + fuzz + "]");
+                System.out.println("Fuzz scanner " + i + ": [" + fuzz + "]");
                 printWriter.println(fuzz);
                 int second = 1000;
                 try {
@@ -56,27 +56,27 @@ public class ReadFile extends BugTest {
                     throw new RuntimeException(e);
                 }
             }
-            System.out.println("[Test input finished, closing...]");
+            System.out.println("[Test scanner finished, closing...]");
             printWriter.close();
         }).start();
         return new Scanner(pis);
     }
 
     public Scanner infiniteFuzzInput() throws IOException {
-        //input end (data receiver)
+        //scanner end (data receiver)
         PipedInputStream pis = new PipedInputStream();
         //output end (data sender, connected to pis)
         PipedOutputStream pos = new PipedOutputStream(pis);
         PrintWriter printWriter = new PrintWriter(pos,true);
 
-        //start infinity input
+        //start infinity scanner
         new Thread(() -> {
             while (true) {
                 String fuzz = getFuzzInput();
                 System.out.println("Fuzz: [" + fuzz + "]");
                 printWriter.println(fuzz);
                 try {
-                    //set input 1 per 1000ms
+                    //set scanner 1 per 1000ms
                     int basesleep = 1000;
                     Thread.sleep(basesleep);
                 } catch (InterruptedException e) {

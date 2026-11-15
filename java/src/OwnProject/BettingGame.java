@@ -128,7 +128,7 @@ public class BettingGame {
             System.out.println("Please enter how much chips you want exchange: ");
             System.out.println(String.format("Remaining amount: %.2f dollars", player.getMoneyBalance() / 100.00));
             System.out.println("1 dollar per 10 chips~");
-            //check input chips first, then add to player.chips if no problem
+            //check scanner chips first, then add to player.chips if no problem
             int inputChips;
             try {
                 inputChips = Integer.parseInt(input.nextLine().trim());
@@ -284,12 +284,12 @@ public class BettingGame {
         ReadFile readFile = new ReadFile();
         //fine file address and read #player
         //test.loadTestFile();
-        //read #input
-        //input = test.setupInput();
-        //50 blanks for random input
-        //input = readFile.systemFuzzInput(50);
-        //infinity input
-        //input = readFile.infiniteFuzzInput();
+        //read #scanner
+        //scanner = test.setupInput();
+        //50 blanks for random scanner
+        //scanner = readFile.systemFuzzInput(50);
+        //infinity scanner
+        //scanner = readFile.infiniteFuzzInput();
 //        if (!players.isEmpty()) {
 //            startGame();
 //            showResults();
@@ -334,7 +334,7 @@ public class BettingGame {
             Player player = new Player(name,0);
             players.add(player);
             System.out.println("Welcome back " + player.getName() + "~");
-            //one line for one part of code, input player class to method
+            //one line for one part of code, scanner player class to method
             exchangeChips(player);
         }
         //continue play if still have money

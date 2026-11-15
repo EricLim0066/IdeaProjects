@@ -24,7 +24,7 @@ public class BugTest {
             bufferedReader = new BufferedReader(reader);
             String line;
             while ((line = bufferedReader.readLine()) != null) {
-                //Separate, then divert following #player and #input
+                //Separate, then divert following #player and #scanner
                 if (line.trim().equals("#Players")) {
                     mode = "Players";
                 } else if (line.trim().equals("#Input")) {
@@ -43,27 +43,27 @@ public class BugTest {
         }
     }
     public String userFuzzInput() {
-        //set input for thinking user will random enter
+        //set scanner for thinking user will random enter
         String[][] userAllInput = {
-                //Int fuzz input
+                //Int fuzz scanner
                 {"-12343", "0", "-1", "-999999",
                         "2147483647", "2147483648",
                         "3.14", "3.14.15.92", ".",
                         "123abc"},
-                //String fuzz input
+                //String fuzz scanner
                 {"TUYGVYGbjyuuy", "HFUYKfyuFYTUFy",
                         "中文字符", "\n", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"},
-                //Symbol fuzz input
+                //Symbol fuzz scanner
                 {"%$^$$^:}:>>", "!@#$%^&*", ",,,,", "//////",
                         ">>><<<", "|||", "~~~"},
-                //Space fuzz input
+                //Space fuzz scanner
                 {"", " ", "                      "}
         };
         String[] category = userAllInput[random.nextInt(userAllInput.length)];
         return category[random.nextInt(category.length)];
     }
 
-    //set get random fuzz input
+    //set get random fuzz scanner
     public String systemRandomInput() {
         random = new Random();
         int length = random.nextInt(100);

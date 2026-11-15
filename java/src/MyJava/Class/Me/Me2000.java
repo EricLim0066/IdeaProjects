@@ -1,9 +1,14 @@
 package MyJava.Class.Me;
 import javax.swing.*;
 import java.text.NumberFormat;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
 //
 public class Me2000 {
     //extra notes额外笔记
@@ -82,7 +87,7 @@ class Me2002 {
      public static void main(String[] args) {
          int i = 0;
          while (true) {   ///无限循环
-             System.out.println("Loop count: " + i);
+             System.out.print("\rLoop count: " + i);
              i++;
              try {
                  int basesleep = 1000;            //设置每1000毫秒生成一次
@@ -113,5 +118,24 @@ class Me2005 {
         int square = (int) Math.pow(5,5);        //等价5^5
         ///java初衷最求通用性，设置double接收更大范围的的结果
         System.out.println(square);
+    }
+}
+
+class Me2006 {
+    public static Duration time = Duration.ofMinutes(5);        //定义5分钟
+    public static void main(String[] args) {
+        ///  Duration 设置时间
+        /// Duration变量常见变数，of定义时间，to转换时间单位，plus加时间，minus减时间
+        /// 常见时间单位，Millis毫秒，Second秒，,SecondParts拿60作为区间，Minutes分钟，Hour小时，Day天
+        /// 通过特定组合可以达成想要的设置
+        System.out.println(String.format("Start time %d: %02d", time.toMinutes(), time.toSecondsPart())); //转换成分钟 ： 转换成秒（60秒区间）
+
+        ScheduledExecutorService scheduler = new ScheduledThreadPoolExecutor(1); //设置线程
+        scheduler.scheduleAtFixedRate(() -> {
+            time = time.minusSeconds(1);
+            System.out.print(String.format("\r%d: %02d", time.toMinutes(), time.toSecondsPart()));   // \r原地刷新
+                }, 0, 1, TimeUnit.MINUTES);  //设置循环执行 {要运行的方法，延迟多久后开始，间隔多久执行一次，以什么单位执行一次（秒，分钟）}
+
+        /// 比Thread.sleep安全，企业常用时间工具之一
     }
 }

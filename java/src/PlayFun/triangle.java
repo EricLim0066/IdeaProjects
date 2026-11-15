@@ -11,7 +11,7 @@ public class triangle {
             try {
                 num = input.nextInt();
             } catch (InputMismatchException e){
-                System.out.println("sorry only can input integer");
+                System.out.println("sorry only can scanner integer");
                 input.nextLine();
                 continue;
             } catch (Exception e) {
